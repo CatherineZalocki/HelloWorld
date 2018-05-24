@@ -26,6 +26,8 @@ namespace HelloWorld
             bool isGodLikeTwo = false;
             char genderMale = 'M';
             char genderFemale = 'F';
+
+            Console.WriteLine("To say our hero is God like is " + isGodLikeOne);
             //////Part three display variable values
             ////Console.WriteLine(messageOne);
             ////Console.WriteLine(messageTwo);
@@ -276,32 +278,90 @@ namespace HelloWorld
             ////Part fourteen for- loop examples
             //for (int i = 0; i < foodAmount.Length; i++)
             //{
-            //    Console.WriteLine(i);
+            ////    Console.WriteLine(i);
+            ////}
+
+            //for (int i = 0; i < foodAmount.Length; i++)
+            //{
+            //    Console.WriteLine("Enter a value for " + foodList[i]);
+            //    foodAmount[i] = int.Parse(Console.ReadLine());
             //}
 
-            for (int i = 0; i < foodAmount.Length; i++)
-            {
-                Console.WriteLine("Enter a value for " + foodList[i]);
-                foodAmount[i] = int.Parse(Console.ReadLine());
-            }
+
+            ////my example
+
+            //string[] pets = new string[2] {"dog", "cat"};
+            //for (int i = 0; i < pets.Length; i++)
+            //{ Console.WriteLine(pets [i]); }
 
 
 
 
 
 
+            isGodLikeOne = IsGodLike(ageOne);
+
+            Console.WriteLine("To say our hero is God like is " + isGodLikeOne);
 
 
-
-
-
-
-
-
-
-
+            Console.WriteLine("To say our hero is God like is " + isGodLikeOne);
+            Console.WriteLine(Reverse(messageTwo));
 
         }
+            
+
+
+        static bool IsGodLike(int age)
+        {
+            bool status;
+            if (age % 2 == 0)
+            {
+                status = false;
+            }
+            else
+            {
+                status = true;
+            }
+            return status;
+        }
+
+
+
+
+        static string Reverse(string text)
+        {
+            char[] cArray = text.ToCharArray();
+            string reverse = " ";
+            for (int i = cArray.Length - 1; i > -1; i--)
+            {
+                reverse += cArray[i];
+            }
+            return reverse;
+        }
+
+
 
     }
 }
+
+
+    
+
+
+    
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+    
+
